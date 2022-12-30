@@ -8,34 +8,43 @@
     <title>Google Advanced Search</title>
   </head>
   <body>
-    <nav class="nav-bar">
-        <img src="../img/google_logo.png" alt="">
-      <a href="../index.html" class="page-link">Home</a>
+    <nav class="adv-nav-bar">
+        <img src="../img/google_logo.png" alt="google_logo" class="header-logo">
+        <a href="../index.html" class="page-link">Home</a>
     </nav>
 
-    <section class="advanced-search container">
+    <section class="adv-page-heading-container">
+        <h1 class="adv-page-heading">Advanced Search</h1>
+    </section>
+
+    
+
+    <section class="advanced-search-container">
         <form action="https://www.google.com/search">
             
             <div class="adv-type-container">
-                <label>all these words:</label>
+                <label class="adv-type-label">all these words:</label>
                 <input class="adv-type-input" value="" name="q" type="text"/>
             </div>
             <div class="adv-type-container">
-                <label>this exact word or phrase:</label>
+                <label class="adv-type-label">this exact word or phrase:</label>
                 <input class="adv-type-input" value="" name="as_epq" type="text"/>
             </div>
 
             <div class="adv-type-container">
-                <label>any of these words:</label>
+                <label class="adv-type-label">any of these words:</label>
                 <input class="adv-type-input" value="" name="as_oq" type="text"/>
             </div>
 
             <div class="adv-type-container">
-                <label>none of these words:</label>
+                <label class="adv-type-label">none of these words:</label>
                 <input class="adv-type-input" value="" name="as_eq" type="text"/>
             </div>
 
-            <input type="submit" value="Advanced Search" class="search-btn">
+            <div class="adv-btn-container">
+                <input type="submit" value="Advanced Search" class="adv-search-btn">
+            </div>
+            
         </form>
     </section>
   </body>
